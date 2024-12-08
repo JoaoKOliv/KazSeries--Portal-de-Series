@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../css/sobreMim.css">
     <link rel="stylesheet" href="../css/seriesSequencial.css">
     <link rel="stylesheet" href="../css/seriesFavoritas.css">
-    <link rel="shortcut icon" type="imagex/png" href="img/logoSite.png">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="shortcut icon" type="imagex/png" href="../img/logo-icons/logoSite.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,14 +40,10 @@
 
             <div class="carrossel">
 
-                <div class="slide ativo"><img src="../img/carrossel/carrossel1.jpg" alt=""></div>
-                <div class="slide"><img src="../img/carrossel/carrossel2.jpg" alt=""></div>
-                <div class="slide"><img src="../img/carrossel/carrossel3.jpg" alt=""></div>
-                <div class="indicadores-carrossel">
-                <button class="ativo"></button>
-                <button></button>
-                <button></button>
-                </div>
+            </div>
+
+            <div class="indicadores-carrossel">
+
             </div>
 
         </div>
@@ -97,6 +94,7 @@
                             <div id="atores">
                                 <ul class="atoresSequencial">
                                 </ul>
+                                <button id="addToFavoritesButton">Adicionar aos Favoritos</button>
                             </div>
                         </div>
                         <div class="imagemDetalhe">
@@ -113,11 +111,10 @@
 
             <div class="dados">
                 <div class="nomeCursoBio">
-                    <h2>Nome</h2>
-                    <h2>Curso</h2>
-                    <h2>Bio</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed provident illum voluptates earum placeat dignissimos voluptatum eum! Corporis dignissimos ipsum illum esse, ducimus, nemo necessitatibus aut rem hic, dolore possimus.
-                    Autem magnam dolor amet magni quae eveniet voluptatibus reiciendis doloremque consequuntur animi beatae aliquam cum natus repellendus, obcaecati ullam quaerat distinctio perspiciatis mollitia iste sapiente enim assumenda. Nulla, optio fugit!</p>
+                    <h2>João Pedro de Oliveira</h2>
+                    <h2 style="font-size: 20px;">Engenharia de Softaware - Puc Minas</h2>
+                    <h2 style="margin-top: 4rem;">Bio</h2>
+                    <p>finge aqui tem uma bio legal !!!!</p>
                 </div>
                 <div class="perfilRedes">
                     <div class="fotoPerfil">
@@ -146,19 +143,8 @@
             <hr class="linhaHorizontal">
 
             <div class="sequenciaDeSeriesFavs">
-                <ul class="sequencial-1Favs">
-                    <li>
-                        <img src="" alt="" style="background-color: rebeccapurple;">
-                    </li>
-                    <li>
-                        <img src="" alt="" style="background-color: rebeccapurple;">
-                    </li>
-                    <li>
-                        <img src="" alt="" style="background-color: rebeccapurple;">
-                    </li>
-                    <li>
-                        <img src="" alt="" style="background-color: rebeccapurple;">
-                    </li>
+                <ul class="sequencial-1Favs" id="menuFavoritos">
+                    <!-- aqui -->
                 </ul>
             </div>
             
@@ -170,5 +156,5 @@
 </body>
 <script src="../javascript/carrossel.js"></script>
 <script src="../javascript/script.js"></script>
-<script src="../javascript/series.js"></script>
+<script src="../javascript/inicial.js"></script>
 </html>

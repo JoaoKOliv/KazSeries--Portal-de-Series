@@ -78,6 +78,24 @@
     align-items: center;
 }
 
+#addToFavoritesButton{
+    border-radius: 12px;
+    padding: 8px;
+    background: rgb(45, 150, 45);
+    border: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    transition: all 0.3s ease;
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 600;
+}
+
+
+#addToFavoritesButton:hover{
+    background: rgb(36, 119, 36);
+}
+
 .popup-content-detalhe {
     background-color: #222;
     border-radius: 10px;
@@ -147,7 +165,6 @@
     color: white;
     text-align: center;
 }
-
 
 @media (max-width: 768px) {
     .sequenciaDeSeries {

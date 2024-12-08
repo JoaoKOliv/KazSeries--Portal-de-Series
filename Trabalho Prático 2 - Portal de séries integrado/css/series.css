@@ -35,9 +35,8 @@
     align-items: center;
 }
 
-/* Efeito ao passar o mouse sobre o item da lista (li) */
 .sequencial li:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do item */
+    transform: scale(1.1); 
     animation: none;
 }
 
@@ -61,6 +60,7 @@
     transform: translateX(-50%);
     z-index: 1000; 
 }
+
 
 @media (max-width: 768px) {
     .sequencial {
