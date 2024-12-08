@@ -1,0 +1,71 @@
+/* Estilo para a linha horizontal dentro do contêiner*/
+#seriesCads .linhaHorizontal {
+    margin: 2px auto; 
+    width: 95%;
+    border: none;
+    border-top: 2px solid white;
+}
+
+/* Estilo para o contêiner das séries */
+.sequenciaDeSeriesFavs {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Estilo para as listas de imagens */
+.sequenciaDeSeriesFavs .sequencial-1Favs{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem auto;;
+}
+
+/* Estilo para os itens das listas */
+.sequenciaDeSeriesFavs li {
+    margin: 1rem;
+}
+
+/* Estilo para as imagens */
+.sequenciaDeSeriesFavs img {
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 350px;
+}
+
+/* Responsividade para telas pequenas*/
+@media (max-width: 768px) {
+    .sequenciaDeSeriesFavs {
+        gap: 1rem;  
+    }
+
+    .sequenciaDeSeriesFavs img {
+        width: 200px;
+        height: 280px;  
+    }
+
+    /* Alterar o layout para uma única coluna nas telas pequenas */
+    .sequenciaDeSeriesFavs .sequencial-1Favs {
+        flex-direction: column;
+        align-items: center; /
+    }
+
+}
+
+/* Responsividade para telas médias */
+@media (max-width: 1024px) {
+    .sequenciaDeSeriesFavs {
+        gap: 1.5rem;  
+    }
+
+    .sequenciaDeSeriesFavs img {
+        width: 220px;  
+        height: 300px;  
+    }
+}

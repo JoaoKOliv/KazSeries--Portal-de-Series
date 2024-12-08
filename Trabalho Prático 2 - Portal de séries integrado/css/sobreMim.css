@@ -1,0 +1,92 @@
+#SobreMim h2, #SobreMim p {
+    color: white;
+}
+
+#sobreMim dados {
+    margin: 0 auto;
+}
+
+.dados {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    position: relative;
+}
+
+.nomeCursoBio {
+    width: 60%;
+    text-align: left;
+}
+
+.fotoPerfil {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoPerfil img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.perfilRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.redeSociais{
+    margin: 0 auto;
+    margin-left: 2.5rem;
+}
+
+.redeSociais ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.redeSociais li img {
+    transition: transform 0.3s;
+}
+
+.redeSociais li img:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .fotoPerfil {
+        display: none;
+        position: relative;
+        top: -20px;
+        right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .redeSociais{
+        margin-top: -2rem;
+        margin-left: 1.5rem;
+    }
+    
+    .redeSociais ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 5px;
+    }
+
+}

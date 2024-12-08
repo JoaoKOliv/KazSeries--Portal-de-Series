@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+body{
+    background: rgb(18, 14, 86);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(14, 14, 82) 44%, rgb(54, 43, 142) 100%); 
+}
+
+.linhaHorizontal{
+
+    display: block;
+    margin: 2px auto;
+    width: 95%;
+    border: none;
+    border-radius: 12px;
+    height: 2px;
+    background-color: white;
+
+}
+
+
+/* ------------------------ HEADER - INICIO  ------------------------ */
+
+header{
+    max-width: 150%;
+    width: 100%;
+    height: 80px;
+}
+
+.cabecalho{
+    display: flex;
+    width: 80%;
+}
+
+ul,li{
+    display: flex;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-top: 12px;
+    color: white;
+}
+
+#menuAba a{
+    
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 600;
+
+}
+
+#menuAba a:hover{
+    background-color: #302684;
+    
+}
+
+.menuAba{
+
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.imgLogo{
+
+    width: 20%;
+    margin: 10px 21px;
+}
+
+.imgLogo a{
+
+    padding: 16px;
+}
+
+/* ------------------------ HEADER - FIM  ------------------------ */
+
+/* ------------------------ MAIN - INICIO  ------------------------ */
+
+main h1{
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-left: 2em;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#emAlta{
+    margin-top: 12px;
+    width: 100%;
+}

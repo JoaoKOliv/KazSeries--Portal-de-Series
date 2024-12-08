@@ -1,0 +1,181 @@
+#seriesCads a {
+    text-decoration: none;
+}
+
+#seriesCads .linhaHorizontal {
+    margin: 2px auto; 
+    width: 95%;
+    border: none;
+    border-top: 2px solid white;
+}
+
+.sequenciaDeSeries {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.sequenciaDeSeries .sequencial-1,
+.sequenciaDeSeries .sequencial-2 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5rem auto;
+}
+
+.sequenciaDeSeries li {
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sequenciaDeSeries li:hover {
+    transform: scale(1.1);
+    animation: none;
+}
+
+.sequenciaDeSeries img {
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 350px;
+    transition: box-shadow 0.3s ease;
+}
+
+.sequenciaDeSeries img:hover {
+    box-shadow: 0 8px 24px rgba(128, 0, 128, 1.2);
+}
+
+.sequenciaDeSeries p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.popup-detalhe {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content-detalhe {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    color: white;
+    position: relative;
+}
+
+.close-detalhe {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.container-detalhe {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#detalhe {
+    width: 70%;
+}
+
+.imagemDetalhe {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemDetalhe img {
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.atoresSequencial {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.atoresSequencial li {
+    text-align: center;
+}
+
+.atoresSequencial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.atoresSequencial p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .sequenciaDeSeries {
+        gap: 1rem;  
+    }
+
+    .sequenciaDeSeries img {
+        width: 200px;
+        height: 280px;  
+    }
+
+    .sequenciaDeSeries .sequencial-1 {
+        flex-direction: column;
+        align-items: center; /
+    }
+
+    .sequenciaDeSeries .sequencial-2{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sequenciaDeSeries {
+        gap: 1.5rem;  
+    }
+
+    .sequenciaDeSeries img {
+        width: 220px;  
+        height: 300px;  
+    }
+}
